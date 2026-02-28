@@ -1,0 +1,80 @@
+/* popupWidget */
+.popupWidget {
+    border: 1px solid #585858;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow:
+        inset 1px 1px 3px rgba(215, 240, 115, 0.4),
+        inset -2px -2px 4px rgba(0, 0, 0, 0.3),
+        0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* popUpWidgetHead */
+.popUpWidgetHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popWidContext h4 {
+    color: #565656;
+}
+
+
+.popUpWidgetHead p {
+    font-size: 11px;
+    color: #565656;
+    display: flex;
+    align-items: center;
+}
+
+/* popWidContextIcon */
+.popWidContextIcon {
+    font-size: 18px !important;
+    color: #D7F073;
+    display: inline-block;
+}
+
+.popupWidgetArrDown {
+    font-size: 12px !important;
+    color: #565656;
+    margin-bottom: -3px;
+}
+
+
+.popWidTotCounts {
+    color: #7b7b7b;
+    margin-top: 5px;
+}
+
+.iconSpan {
+    display: flex;
+    align-items: center;
+}
+
+.popWidContextIconArrDown {
+    font-size: 14px !important;
+}
+
+.redOne {
+    color: red;
+}
+
+.iconSpan .percent {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.successDiv {
+    margin-top: 4px;
+}
+
+.success {
+    font-size: 10px;
+    color: #727272;
+    margin-top: -4px;
+}
+
+.percent {
+    font-size: 12px;
+}

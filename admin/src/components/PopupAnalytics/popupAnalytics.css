@@ -1,0 +1,77 @@
+/* popupAnalytics */
+.popupAnalytics {
+    border: 1px solid #585858;
+    border-radius: 12px;
+    padding: 12px 22px;
+    height: 160.5px;
+    box-shadow: 8px -8px 25px rgba(255, 255, 255, 0.25) inset;
+    -webkit-box-shadow: 8px -8px 25px rgba(255, 255, 255, 0.25) inset;
+    -moz-box-shadow: 8px -8px 25px rgba(255, 255, 255, 0.25) inset;
+}
+
+.popupAnalytics .lineChart {
+    transform: rotate(-8deg);
+    width: 90% !important;
+    position: relative;
+    right: -25px;
+}
+
+/* popAnaTotFollDiv */
+.popAnaTotFollDiv {
+    display: flex;
+    align-items: center;
+}
+
+/* popAnaTotFollDivIcon */
+.popAnaTotFollDivIcon {
+    font-size: 18px !important;
+    color: #D7F073;
+}
+
+/* ToFolHead */
+.ToFolHead {
+    color: #585858;
+    margin-left: 3px;
+}
+
+.popAnaTotFollDiv p {
+    font-size: 11px;
+    margin-left: 6px;
+    color: #565656;
+}
+
+.PopnaArrDown {
+    font-size: 13px;
+    margin-bottom: -4px;
+    color: #565656 !important;
+}
+
+.popAnaTotFoll {
+    color: #7b7b7b;
+}
+
+/* perecentRevenue */
+.perecentRevenue {
+    margin-top: -75px;
+    display: flex;
+    align-items: center;
+}
+
+.greenSpan {
+    color: #05BA06;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.greenSpanIcon {
+    font-size: 14px !important;
+}
+
+.lightPara {
+    font-size: 10px;
+    margin-left: 3px;
+    color: #565656;
+    margin-bottom: -2px;
+}

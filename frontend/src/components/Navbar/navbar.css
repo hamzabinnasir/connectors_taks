@@ -1,0 +1,375 @@
+/* navbar */
+#navbar {
+    position: fixed;
+    width: 100%;
+    right: 0px;
+    backdrop-filter: blur(25px);
+    background-color: #0000003f;
+    z-index: 100;
+}
+
+.navMain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 150px 20px 150px;
+    background-color: inherit;
+}
+
+.navBorder {
+    border-bottom: 1px solid #929781;
+    width: calc(100% - 170px);
+    display: block;
+    margin: auto;
+}
+
+/* logo */
+#logo {
+    width: 50px;
+    cursor: pointer;
+}
+
+/* navListContainer */
+.navListContainer {
+    display: flex;
+    align-items: center;
+    border: 0.5px solid #888888;
+    padding: 0px 58px 0px 32px;
+    border-radius: 20px;
+    gap: 22px;
+    margin-right: -90px;
+}
+
+
+.navUlLi {
+    list-style: none;
+    font-size: 14px;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+.navUlLi:hover {
+    transition: 0.2s;
+    color: #D7F073;
+}
+
+.arrLi {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* profileBtn */
+.profileBtn {
+    display: flex;
+    align-items: center;
+}
+
+.profileBtn button {
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+/* getStartBtn */
+.getStartBtn {
+    display: flex;
+    align-items: center;
+    background-color: #D7F073;
+    gap: 6px;
+}
+
+/* loginBtn */
+.loginBtn {
+    background-color: inherit;
+    color: #fff;
+}
+
+.loginBtn:hover {
+    color: #D7F073;
+    transition: 0.2s;
+}
+
+.getStartBtn:hover {
+    background-color: inherit;
+    color: #D7F073;
+    transition: 0.2s;
+    border: 1px solid #D7F073;
+}
+
+/* getStartIcon */
+.getStartIcon {
+    font-size: 22px !important;
+    font-weight: lighter !important;
+}
+
+/* DropDown */
+.dropDownListContainer {
+    position: relative;
+}
+
+/* liListsCon */
+.liListsCon {
+    background-color: #0F1725;
+    position: absolute;
+    margin-top: 0.5px;
+    left: -10px;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 8px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    width: 160px;
+    display: none;
+}
+
+.liListsCon p:hover {
+    background-color: #262f41;
+    cursor: pointer;
+}
+
+.liListsCon p {
+    padding: 5px 4px;
+    border-radius: 4px;
+}
+
+.dropDownListContTools:hover .liListsCon {
+    display: block;
+}
+
+.dropDownListContRes:hover .liListsCon {
+    display: block;
+}
+
+/* Arrow Icon Transition */
+.arrowIcon {
+    transition: transform 0.3s ease !important;
+}
+
+.arrowIcon.rotated {
+    transform: rotate(180deg);
+}
+
+.mobileMenuToggle {
+    display: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.mobileOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+}
+
+.mobileOverlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobileProfileBtn {
+    display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    .navMain {
+        padding: 30px 40px 20px 40px;
+    }
+
+    .navBorder {
+        width: calc(100% - 80px);
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .navListContainer {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 320px;
+        background: #0d1117;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        z-index: 1000;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        gap: 0;
+        transition: right 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        box-shadow: -20px 0 50px rgba(0, 0, 0, 0.8);
+        overflow-y: auto;
+    }
+
+    .navListContainer.active {
+        right: 0;
+    }
+
+    .mobileMenuHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 25px;
+        background: #161b22;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        box-sizing: border-box;
+    }
+
+    .mobileMenuLogo {
+        width: 45px;
+        height: auto;
+    }
+
+    .mobileMenuClose {
+        cursor: pointer;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease;
+    }
+
+    .mobileMenuClose:hover {
+        background: rgba(215, 240, 115, 0.2);
+        color: #D7F073;
+    }
+
+    .desktopOnly {
+        display: none;
+    }
+
+    .mobileMenuToggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 90;
+        padding: 10px;
+        background: rgba(215, 240, 115, 0.1);
+        border-radius: 12px;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .mobileMenuToggle:active {
+        transform: scale(0.9);
+    }
+
+    .mobileProfileBtn {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        padding: 30px 25px;
+        margin-top: auto;
+        background: #161b22;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        box-sizing: border-box;
+    }
+
+    .mobileProfileBtn button {
+        width: 100%;
+        padding: 14px;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all 0.2s ease;
+    }
+
+    .navUlLi {
+        font-size: 16px;
+        font-weight: 500;
+        width: 100%;
+        padding: 18px 25px;
+        color: #e6edf3;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        box-sizing: border-box;
+        transition: all 0.2s ease;
+    }
+
+    .navUlLi:hover {
+        background: rgba(215, 240, 115, 0.05);
+        color: #D7F073;
+        padding-left: 30px;
+    }
+
+    .liListsCon {
+        position: static;
+        width: 100%;
+        display: none;
+        background-color: #0d1117;
+        padding: 5px 0;
+        margin: 0;
+        text-align: left;
+        border-radius: 0;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .liListsCon p {
+        padding: 12px 40px;
+        font-size: 14px;
+        color: #8b949e;
+        transition: all 0.2s ease;
+    }
+
+    .liListsCon p:hover {
+        background: rgba(215, 240, 115, 0.1);
+        color: #D7F073;
+    }
+
+    .dropDownListContainer:hover .liListsCon,
+    .dropDownListContainer.open .liListsCon {
+        display: flex;
+    }
+
+    .dropDownListContainer {
+        width: 100%;
+    }
+
+    .arrLi {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .navListContainer {
+        width: 100%;
+    }
+
+    .navMain {
+        padding: 20px 25px;
+    }
+
+    .navBorder {
+        width: calc(100% - 50px);
+    }
+}

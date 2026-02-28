@@ -1,0 +1,235 @@
+/* /sidebar */
+.sideBar {
+    white-space: nowrap;
+    background-color: #000;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.sideBar p {
+    font-size: 14px;
+    color: #c8c8c8;
+}
+
+/* profileBox */
+.profileBox {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    background-color: #141414;
+    padding: 14px 18px;
+    border-radius: 16px;
+}
+
+.profilePicCirlce {
+    height: 47px;
+    width: 47px;
+    border-radius: 50%;
+    background-color: #ececec;
+}
+
+.profileBoxCont {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.profileBoxCont p {
+    color: #D7F073;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.profileBoxCont h4 {
+    color: #e0e0e0;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.arrowDown {
+    font-size: 18px !important;
+    margin-left: auto;
+}
+
+.icon {
+    font-size: 17px !important;
+    color: #D7F073;
+}
+
+.logoutBtn {
+    color: #ff4d4d !important;
+}
+
+
+/* darkThemeBox */
+.darkThemeBox {
+    background-color: #141414;
+    margin-top: 18px;
+    padding: 14px 28px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.themeToggleDiv {
+    justify-content: space-between;
+}
+
+.drkThDivCon {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.drkThDiv {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    cursor: pointer;
+}
+
+/* sideBarUl */
+.SideBarUlContainer {
+    margin-top: 18px;
+    padding: 14px 28px;
+    border-radius: 16px;
+    background-color: #141414;
+}
+
+.dashboardIcon {
+    font-weight: lighter !important;
+}
+
+.ulHead {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 13px 0px;
+}
+
+.sideBarUl {
+    padding: 13px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    border-top: 1px solid #4a4a4a;
+    border-style: dotted;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+.sideUlLiArr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sideUlLiArrDiv {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.sideUlLi {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: max-content;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.dropdownContent {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0, 1, 0, 1), opacity 0.3s ease;
+    max-height: 0;
+    opacity: 0;
+}
+
+.dropdownContent.show {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 14px;
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease;
+}
+
+.arrowDown {
+    transition: transform 0.3s ease !important;
+}
+
+.arrowDown.rotate {
+    transform: rotate(180deg);
+}
+
+.sideUlLiArr {
+    cursor: pointer;
+}
+
+
+.sidebarOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+.sidebarHeaderMobile {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.sidebarHeaderMobile h3 {
+    color: #fff;
+    margin: 0;
+}
+
+.closeMenuBtn {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .sideBar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 280px;
+        transform: translateX(-100%);
+        padding: 20px;
+        overflow-y: auto;
+    }
+
+    .sideBar.show {
+        transform: translateX(0);
+    }
+
+    .sidebarOverlay.show {
+        display: block;
+    }
+
+    .sidebarHeaderMobile {
+        display: flex;
+    }
+
+    .SideBarUlContainer,
+    .darkThemeBox,
+    .profileBox {
+        padding: 14px 18px;
+    }
+}

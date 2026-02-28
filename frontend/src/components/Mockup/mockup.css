@@ -1,0 +1,30 @@
+/* mockupPage */
+.mockupPage {
+    position: relative;
+    z-index: 10;
+}
+
+.mockupPage img {
+    width: 80%;
+    border-radius: 22px;
+    display: block;
+    margin: auto;
+    margin-top: -70px;
+    z-index: 100;
+}
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    .mockupPage img {
+        width: 90%;
+        margin-top: -50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mockupPage img {
+        width: 95%;
+        margin-top: -30px;
+        border-radius: 12px;
+    }
+}

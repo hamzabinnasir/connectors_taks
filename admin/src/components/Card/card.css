@@ -1,0 +1,138 @@
+.cardDiv {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #111111;
+    box-shadow:
+        inset 0 0 0 1px rgba(215, 240, 115, 0.25),
+        inset 0 0 20px rgba(215, 240, 115, 0.15),
+        inset 0 0 40px rgba(215, 240, 115, 0.1),
+        0 4px 12px rgba(0, 0, 0, 0.6);
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.cardImgDiv {
+    height: 170px;
+}
+
+.cardDiv img {
+    border-radius: 12px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mainDetailsDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 4px;
+    border-bottom: 0.5px solid #222222;
+}
+
+.nameAndAddress p,
+.followersCount p {
+    color: #6b6b66;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.adctCostContext p {
+    color: #6b6b66;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.cardName {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.dot {
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: #03A1EB;
+}
+
+.addressAndGen,
+.folloTxt {
+    color: #6b6b66;
+    font-size: 10px !important;
+    margin-top: 2px;
+}
+
+
+/* iconsAndFitness */
+.iconsAndFitness {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 4px;
+    border-bottom: 0.5px solid #222222;
+}
+
+/* fitnessBtn */
+.fitnessBtn {
+    background-color: #D7F073;
+    border: none;
+    outline: none;
+    font-size: 9px;
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-weight: 400;
+}
+
+
+/* iconsDiv */
+.iconsDiv {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #6b6b66;
+}
+
+.iconDivIcon {
+    font-size: 14px !important;
+}
+
+/* advtCostDiv */
+.advtCostDiv {
+    padding: 9px 0px 0px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.advtCostPara {
+    margin-top: 2px;
+}
+
+.advtCostPara span {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+
+.bookMarkIcon {
+    font-size: 22px !important;
+    color: #D7F073;
+}
+
+@media (max-width: 480px) {
+    .cardImgDiv {
+        height: 200px;
+    }
+
+    .cardDiv {
+        padding: 10px;
+    }
+
+    .mainDetailsDiv,
+    .iconsAndFitness {
+        padding: 8px 2px;
+    }
+}

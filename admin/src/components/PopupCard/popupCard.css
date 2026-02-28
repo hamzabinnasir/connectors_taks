@@ -1,0 +1,86 @@
+/* popupCard */
+.popupCard {
+    background-color: #1E1E1E;
+    border: 1px solid #D7F073;
+    border-radius: 14px;
+    padding: 9px 14px;
+}
+
+/* popCardProfilBox */
+.popCardProfilBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pcpContext {
+    margin-bottom: -4px;
+}
+
+.pcpName {
+    font-size: 11px;
+    font-weight: bold;
+    color: #686868;
+}
+
+.pcpDate {
+    color: #848484;
+    font-size: 9px;
+}
+
+.popCardProfilBox img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.pspPreview {
+    background-color: #373737;
+    height: 110px;
+    border-radius: 12px;
+    margin-top: 8px;
+}
+
+.pcpSponsar {
+    position: relative;
+    font-size: 6px;
+    font-weight: bold;
+    color: #000;
+    right: -82px;
+    top: -14px;
+    background-color: #D7F073;
+    display: inline-block;
+    border-radius: 12px;
+    padding: 2px 5px;
+}
+
+.pcpConConLi {
+    padding: 5px 0px;
+}
+
+.firstLi,
+.secondLi {
+    border-bottom: 0.5px solid #373737;
+}
+
+.pcpConConLi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pcpTotLikesPa {
+    font-size: 9px;
+    color: #585858;
+}
+
+.pcpTotLikes {
+    font-size: 10px;
+    color: #787878;
+    font-weight: bold;
+}
+
+.pcpIcon {
+    font-size: 14px !important;
+    color: #D7F073;
+}

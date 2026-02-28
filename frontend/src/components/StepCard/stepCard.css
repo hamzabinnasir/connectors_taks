@@ -1,0 +1,58 @@
+/* stepCard */
+.stepCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 22px 22px 42px 22px;
+    border-radius: 16px;
+    width: 360px;
+    min-height: 430px;
+    background: linear-gradient(to top, rgba(215, 240, 115, 0.3), rgba(215, 240, 115, 0));
+}
+
+.stepCard h1 {
+    color: #c4c4c4;
+}
+
+/* cardImg */
+.cardImg {
+    font-size: 60px !important;
+    color: #c4c4c4 !important;
+    margin-top: 40px;
+    color: #D7F073 !important;
+}
+
+.stepCard h2 {
+    color: #D7F073;
+    font-size: 26px;
+}
+
+.stepCard p {
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 40px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    .stepCard {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .stepCard h2 {
+        font-size: 22px;
+    }
+
+    .stepCard p {
+        font-size: 16px;
+        margin-top: 20px;
+        line-height: 24px;
+    }
+
+    .cardImg {
+        font-size: 50px !important;
+    }
+}
