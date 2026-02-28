@@ -3,7 +3,6 @@ import React, { useState } from "react"
 import { assets } from "../../assets/assets.js"
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 
 export default function Navbar() {
